@@ -90,7 +90,7 @@ article {
     background-color: white;
     float: left;
     margin-top: 25px;
-    margin-left: 25px;
+    margin-left: 6%;
     width: 65%;
     text-align: justify;
 }
@@ -162,6 +162,7 @@ article img {
 aside {
 	float:right;
     margin-top: 25px;
+    margin-right: 1.5%;
     width: 250px;
     height: 100%;
 }
