@@ -107,10 +107,19 @@ article {
     margin-right: 10px;
 }
 
+article img {
+	position: relative;
+	width: 89.2%;
+	left: 5%;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	height: 100%;
+}
+
 .post_title {
-	font-size: 24px;
+	font-size: 22px;
 	font-weight: bold;
-	width: 500px;
+	width: 85%;
 	margin-top: 20px;
 	margin-bottom: 20px;
 	margin-left: 12px;
@@ -189,6 +198,6 @@ table {
 }
 
 footer {
-	position: absolute;
 	margin-top: 98%;
+	position: relative;
 }
