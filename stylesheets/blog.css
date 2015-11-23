@@ -202,3 +202,13 @@ footer {
 	margin-top: 98%;
 	position: relative;
 }
+
+.bold {
+	font-weight: bold;
+}
+
+.icon {
+	width: 32px;
+	height: 32px;
+	margin-left: 10%;
+}
