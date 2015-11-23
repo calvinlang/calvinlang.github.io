@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
+<link rel="stylesheet" type="text/css" href="../stylesheets/blog.css">
+<head>
+	<title></title>
+</head>
+<!-- Here we have three parts that make up the top 3 bars. 
+They're titled in classes "header_1" "header_2" "header_3"-->
+
+<nav id="header_overlay4">Search</nav>
+<body>
+<header>
+	<header id="header_1"></header>
+	<header id="header_2"></header>
+	<header id="header_3"></header>
+	<header id="header_overlay1">Calvin Lang</header>
+	<header id="header_overlay2">
+		A site about my adventure in software development
+	</header>
+
+	<nav id="header_overlay3">
+		Home Page<span class="wordspacing"></span>About Me<span class="wordspacing"></span>Projects<span class="wordspacing"></span>Resume<span class="wordspacing"></span>Blog
+	</nav>	
+</header>
+<article>
+	<div class="post">
+		<div class="post_title">Enumberable#cycle</div>
+		<div class="post_date">
+			<div class="date_number">23</div>
+			<div class="date_month">Nov</div>
+		</div>
+		<div class="post_content">		
+			<p>We all need loops. They are a fundamental part of programming. So what if we are in a situation we have to loop the same content several times? Well it doesn't make sense to use an each loop over and over. We could just use a while loop, but if we want to refactor this into something simpler a cycle loop may be what you're looking for.</p>
+
+			<p>Let's say you're making an array and you want to make a list of Monday through Friday for 4 weeks. Instead of using a while loop or a .each loop we can simply use .cycle for 4 weeks. Another situation is we may want to have a list of 50 rolls of a dice. Instead of creating a method that calls the loop 50 rolls, we can simply use cycle 50 for our method that </p>
+
+			<p>For the enumerator #cycle, if it is not passed a block it will return and Enumerator. Let's say we have an array of the days of the week and we pass it array.cycle without the code block.</p>
+
+			<div class="codeblock">
+			<p>day = day_of_week.cycle</p>
+			<p>day.next</p>
+			<p>Monday</p>
+			<p>day.next</p>
+			<p>Tuesday</p>
+			</div>
+
+			<p>And this will repeat forever until it is broken with break if. </p>
+			
+<!-- 		<div class="post_link">Continue...</div> -->
+		</div>
+	</div>
+</article>
+
+<aside>
+	<div id="aside_1">			<table>
+		<tbody><tr>
+				<td>My name is Calvin Lang and I am an aspiring developer. I'm currently enrolled at DevBootCamp Chicago in the Chorus Frogs Cohort.</td>
+				<td><img src="http://calvinlang.github.io/blog/imgs/profile.png" width="130"></td>
+			</tr>
+			<tr>
+				<td colspan="2">
+				I created this blog as a place for me to show what I'm working on both in software development and my life. My interests are woodworking, medical science, productivity, nurtition, and weight training.
+				</td>
+			</tr>
+		</tbody></table>
+	</div>
+	<div id="aside_2"> Popular Blog Posts </div>
+	<div id="aside_3"> My Projects </div>
+	<div id="aside_4"> Blogs by month </div>
+</aside>
+
+<!-- <footer>
+	<p>Follow me on Facebook or LinkedIn. </p>
+	<p>Copyright © 2015 Calvin Lang</p>
+</footer> -->
+
+</body>
+</html>

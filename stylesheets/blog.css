@@ -212,3 +212,10 @@ footer {
 	height: 32px;
 	margin-left: 10%;
 }
+
+.codeblock {
+	background-color: #8C7272;
+	margin: 2%;
+	padding: 5px;
+	color: yellow;
+}
