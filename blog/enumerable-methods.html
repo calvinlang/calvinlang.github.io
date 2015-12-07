@@ -39,21 +39,21 @@ They're titled in classes "header_1" "header_2" "header_3"-->
 
 			<p>For example</p>
 			<div class="codeblock">
-			days_of_week = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"]
-			days_of_week.cycle(2) { |d| puts d }
+days_of_week = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"]
+days_of_week.cycle(2) { |d| puts d }
 			</div>
 			<p>We get</p>
 			<div class="codeblock">
-			Monday
-			Tuesday
-			Wednesday
-			Thursday
-			Friday
-			Monday
-			Tuesday
-			Wednesday
-			Thursday
-			Friday
+Monday
+Tuesday
+Wednesday
+Thursday
+Friday
+Monday
+Tuesday
+Wednesday
+Thursday
+Friday
 			</div>
 
 			<p>Cycle is very powerful tool that probably that has an advantage over .each and .times. in that you can easily iterate over an array as many times as you like with .cycle(). It's a terrific way to loop through elements with more functionality than a times loop.</p>
