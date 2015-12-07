@@ -107,6 +107,10 @@ article {
     margin-right: 10px;
 }
 
+.centered {
+	text-align: center;
+}
+
 article img {
 	position: relative;
 	width: 89.2%;
