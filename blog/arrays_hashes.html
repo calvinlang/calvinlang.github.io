@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Calvin Lang</title>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+<link rel="stylesheet" type="text/css" href="../style.css"/>
+</head>
+<body>
+<div id="container">
+  <div id="banner">
+    <div id="title">
+      <h1><a href="index.html">Calvin Lang</a></h1>
+      <h2>Software development, technology and medical lab science</h2>
+    </div>
+    <ul class="nav">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="../about_me.html">About Me</a></li>
+      <li><a href="../projects.html">Projects</a></li>
+      <li><a href="../resume.html">Resume</a></li>
+      <li><a href="../index.html">Blog</a></li>
+    </ul>
+  </div>
+  <div id="mainContentTop"> </div>
+  <div id="mainContent">
+    <div class="left">
+      <div class="article">
+      		<h1>Arrays and Hashes</h1>
+			<p>Arrays and hashes are index collections used to store and access collections. Both have their advantages and disadvantages in how they are stored and accessed, so choosing the right one is important. First we'll talk a little bit about what each one is.</p>
+
+			<p>Arrays are sequentially ordered lists. It can store all sorts of objects, even other arrays. They look like this [ 0 , 1, 2, 3, 4, 5]. The 0 is in the 0th position and the 4 is in the 4th position. Notice though that we start at 0, so a position of 5 stores 6 values.So these can actually store any kinds of objects like strings, poems, number, methods, or, like we said before, other arrays. </p>
+			<p>Hashes are another index collection that store information in key-value pairs. Again these can store any kind of objects, even other arrays or hashes! So these key-value pairs store information that can be recalled from the key. For example if I'm doing a dossier on a person, I can call the keys by Age, Last Name, Occupation and load this information in constant time.</p>
+			<p>Here's something I read that really helped me with these concepts. You can think of an Array like it's a grocery list. You have your eggs, milk and cereal. They have no special order, they are just stored in this list as top to bottom. For hashes I like to think of them like a set of flash cards that you used to study from. Like I can have something that goes key-value like "Hello"-"A standard greeting". This way hashes act as a definition.</p>
+			<p>Hashes storing hashes can be great for storing user information. We can have a hash called "users" with names like "calvin" and "joe." But then within the "calvin" key, you can store another hash with the keys of "age" and "email". </p>
+			<p>The advantage of each is how you want to use your data and access it. Arrays can have iterations that run through each and every value to access it. The utility of this is incredibly but in a way it's like going through a telephone book from A-Z to find something that starts with K. But if you want to find every single one that is longer than 7 letters long and array is your ideal structure. Whereas with Hashes we can do a direct access that takes a constant amount of time for each value. This would make looking for a single value much easier and is better for lookup.</p>
+			<p>In the end, look for how you want you data to be processed and the algorithms you want to use. That will determine whether you want to use hashes or arrays.</p>
+        <div class="leftFooter">
+          <p>Posted November 15th 2015 by Calvin</p>
+        </div>
+      </div>
+      <div class="lefthr"></div>
+    </div>
+    <div class="right">
+      <div class="rarticle">
+        <h1></h1>
+        <h1><img src="imgs/profile.png"></h1>
+        
+        <p>My name is Calvin Lang and I am an aspiring developer. I'm currently enrolled at DevBootCamp Chicago in the Chorus Frogs Cohort. I love projects, any kind of project. I created this blog as a place for me to show what I'm working on both in software development and my life. My interests are woodworking, medical science, productivity, nutrition, and weight training.</p>
+      </div>
+      <div class="righthr"></div>
+      <h1>Recent Blog Posts</h1>
+      <ul>
+        <li><a href="web_security.html">How web security works</a></li>
+        <li><a href="class.html">It's time for Ruby, class</a></li>
+        <li><a href="git.html">About GitHub</a></li>
+        <li><a href="cultural_issues">Cultural issues in tech</a></li>
+        <li><a href="arrays_hashes.html">Ruby hashes and arrays</a></li>
+        <li><a href="enumerable-methods.html">Enumerable#cycle</a></li>
+      </ul>
+      <div class="righthr"></div>
+      <div class="rarticle">
+        <h1>Projects</h1>
+          <ul>
+            <li><a href="projects/cheatsheet.html">Calvin's DBC Cheat Sheet</a></li>
+          </ul>
+      </div>
+    </div>
+  </div>
+  <div id="clear"></div>
+</div>
+<div id="copyright">&copy; 2015 Calvin Lang. CSS template by <a href="http://free-css-templates.gorotron.com">gorotron</a></div>
+</body>
+</html>

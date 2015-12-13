@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
+<link rel="stylesheet" type="text/css" href="../stylesheets/blog.css">
+<head>
+	<title></title>
+</head>
+<!-- Here we have three parts that make up the top 3 bars. 
+They're titled in classes "header_1" "header_2" "header_3"-->
+
+<nav id="header_overlay4">Search</nav>
+<body>
+<header>
+	<header id="header_1"></header>
+	<header id="header_2"></header>
+	<header id="header_3"></header>
+	<header id="header_overlay1">Calvin Lang</header>
+	<header id="header_overlay2">
+		A site about my adventure in software development
+	</header>
+
+	<nav id="header_overlay3">
+		Home Page<span class="wordspacing"></span>About Me<span class="wordspacing"></span>Projects<span class="wordspacing"></span>Resume<span class="wordspacing"></span>Blog
+	</nav>	
+</header>
+<article>
+	<div class="post">
+		<div class="post_title">What is the difference between margin, border, and padding?</div>
+		<div class="post_date">
+			<div class="date_number">6</div>
+			<div class="date_month">Nov</div>
+		</div>
+		<div class="post_content">		
+			<p>When you're working with CSS at first you're going to find quickly that everything is connected and the elemnts you put in can all affect one another. It's like building a shelf. If you've ever built furniture out of wood, you'll find that one of the biggest rookie mistakes is not taking into account the width of the wooden planks you use. You'll find this analogy works really well when we are talking about the concepts of margin, border, and padding in CSS.</p>
+
+			<p>
+				Imagine we are building this shelf from <a href="www.123rf.com">123rd.com<a>:
+
+			</p>
+			<img src="http://previews.123rf.com/images/vska/vska1202/vska120200073/12463830-Square-wooden-shelves-vector-format-Stock-Vector-interior-store-book.jpg">
+			<p>For borders it is the actual presentation of the size of an object. This is like the stain and the thickness of the wood you are using. If I wanted to build a 3x5 shelf, and I used 1" planks vs 3" planks, I would still end up with a 3x5 shelf!</p>
+
+			<p>So about padding and margins, they are not really different. Padding and margins are setting in px or % the minimum amount of space they have between them. The biggest difference is that margins allow for overlap.</p>
+
+			<p>Let's say there we have 2 square shapes on our webpage. If we have two of them with {margin: 0px;} they are right next to each other. If we set both of them to {margin: 20px;} they will be 20 pixels apart. If we instead set them to {padding: 20px} they would actually end up being 40 pixels apart.</p>
+
+			<p>So the real difference between "padding" and "margin" is that margin allows overlap. Their function is to dictate the amount of space between your objects and its distance from another object.</p>
+
+<!-- 		<div class="post_link">Continue...</div> -->
+		</div>
+	</div>
+</article>
+
+<aside>
+	<div id="aside_1">			<table>
+		<tbody><tr>
+				<td>My name is Calvin Lang and I am an aspiring developer. I'm currently enrolled at DevBootCamp Chicago in the Chorus Frogs Cohort.</td>
+				<td><img src="http://calvinlang.github.io/blog/imgs/profile.png" width="130"></td>
+			</tr>
+			<tr>
+				<td colspan="2">
+				I created this blog as a place for me to show what I'm working on both in software development and my life. My interests are woodworking, medical science, productivity, nurtition, and weight training.
+				</td>
+			</tr>
+		</tbody></table>
+	</div>
+	<div id="aside_2"> Popular Blog Posts </div>
+	<div id="aside_3"> My Projects </div>
+	<div id="aside_4"> Blogs by month </div>
+</aside>
+
+<!-- <footer>
+	<p>Follow me on Facebook or LinkedIn. </p>
+	<p>Copyright © 2015 Calvin Lang</p>
+</footer> -->
+
+</body>
+</html>

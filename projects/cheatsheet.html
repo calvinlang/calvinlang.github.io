@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Calvin Lang</title>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+<link rel="stylesheet" type="text/css" href="cheatsheet_style.css"/>
+</head>
+<body>
+<div id="container">
+  <div id="banner">
+    <div id="title">
+      <h1><a href="index.html">Calvin's DBC Cheat Sheet</a></h1>
+    </div>
+  </div>
+  <div id="mainContentTop"> </div>
+  <div id="mainContent">
+    <div class="left">
+      <div class="article">
+        <table class="tg">
+          <tr>
+            <th colspan="2">Ruby Enumberables</th>
+          </tr>
+          <tr>
+            <td align="center" colspan="2">Arrays</td>
+          </tr>
+          <tr>
+            <td>all? [{|x| ... }]</td>
+            <td>Returns true if block never returns “false”. Default block { |x| x }.</td>
+          </tr>
+          <tr>
+            <td>any? [{|x| ... }]</td>
+            <td>Returns true if block ever returns “true”. Default block { |x| x }. Can use any? alone for a boolean.</td>
+          </tr>
+          <tr>
+            <td>concat()</td>
+            <td>Add to end of array</td>
+          </tr>
+          <tr>
+          <tr>
+            <td>delete_if{|x|...}</td>
+            <td>Deletes if statement</td>
+          </tr>
+          <tr>
+            <td>delete() or delete_at(index)</td>
+            <td>Deletes if statement</td>
+          </tr>
+          <tr>
+            <td>detect { |x| ... }</td>
+            <td>Returns first element where block returns “true”: (1..10).detect {|i| i % 5 == 0} = 2</td>
+          </tr>
+          <tr>
+            <td>drop(ind)</td>
+            <td>Returns array with n index gone</td>
+          </tr>
+          <tr>
+            <td>each_cons(n) { |x| ... }</td>
+            <td>Splits array into consecutive elements</td>
+          </tr>
+          <tr>
+            <td>each_slice(n) { |x| ... }</td>
+            <td>Splits array for every n elements: [1,2,3,4].each_slice(2).to_a = [1,2][3,4]</td>
+          </tr>
+          <tr>
+            <td>find_all { |x| ... }</td>
+            <td>Returns array of all elements where block returns “true”.</td>
+          </tr>
+          <tr>
+            <td>find_index()</td>
+            <td>Returns index of the first element where block returns “true”: [1,2,3,4].index(3)=2</td>
+          </tr>
+          <tr>
+            <td>flatten</td>
+            <td>Make nested array flat. Flatted(1) is to flatten by 1 level. Converts has to an array.</td>
+          </tr>
+          <tr>
+            <td>grep(pattern) [{ |x| ... }]</td>
+            <td>Returns array of block return values</td>
+          </tr>
+          <tr>
+            <td>include?(value)</td>
+            <td>Return boolean if values is in array.</td>
+          </tr>
+          <tr>
+            <td>insert(ind,value)</td>
+            <td>Inserts the given values before the element with the given index</td>
+          </tr>
+          <tr>
+            <td>join("")</td>
+            <td>Turn array into string. Within brackets is the serparation.</td>
+          </tr>
+          <tr>
+            <td>map { |x| ... }</td>
+            <td>Returns an array with the results from block.</td>
+          </tr>
+          <tr>
+            <td>map(&:to_i)</td>
+            <td>Convert array to integers</td>
+          </tr>
+          <tr>
+            <td>one? [{ |x| ... }]</td>
+            <td>Returns true if block returns “true” exactly once. Default block { |x| x }. Can use one? alone for a boolean.</td>
+          </tr>
+          <tr>
+            <td>pop</td>
+            <td>Removes the last element from self and returns it</td>
+          </tr>
+          <tr>
+            <td>reject { |x| ... }</td>
+            <td>Returns array of all elements where block returns “false”.</td>
+          </tr>
+          <tr>
+            <td>shuffle</td>
+            <td>Shuffles the array</td>
+          </tr>
+          <tr>
+          <tr>
+            <td colspan="2" align="center">Sorting</td>
+          </tr>          
+            <td>sort { |a, b| ... }</td>
+            <td>Returns array sorted by <=> operator or by block. Default block { |a, b| a <=> b }.</td>
+          </tr>
+          <tr>
+            <td>sort_by { |x| ... }</td>
+            <td>string.sort_by {|word| word.length}</td>
+          </tr>
+          <tr>
+            <td>max { |a, b| ... }</td>
+            <td>Returns maximum element. Default block { |a, b| a <=> b }.</td>
+          </tr>
+          <tr>
+            <td>min { |a, b| ... }</td>
+            <td>Returns minimum element. Default block { |a, b| a <=> b }.</td>
+          </tr>
+          <tr>
+            <td>minmax { |a, b| ... }</td>
+            <td>Returns [min, max]. Default block { |a, b| a <=> b }.</td>
+          </tr>
+          <tr>
+            <td colspan="2" align="center">Strings</td>
+          </tr>
+          <tr>
+            <td>Str.center(space,values)</td>
+            <td>"hello".center(20)= " hello " or "hello".center(20, '123')= "1231231hello12312312"</td>
+          </tr>
+          <tr>
+            <td>count</td>
+            <td>Gives the lenght</td>
+          </tr>
+          <tr>
+            <td>include?(str)</td>
+            <td>Gives boolean if contains string</td>
+          </tr>
+          <tr>
+            <td>chop</td>
+            <td>Removes last letter of string</td>
+          </tr>
+          <tr>
+            <td>delete""</td>
+            <td>Deletes letters: "hello".delete "e","h" = “llo"</td>
+          </tr>
+          <tr>
+            <td>each_char {|x|...}</td>
+            <td>Iterate through a string</td>
+          </tr>
+          <tr>
+            <td>gsub()</td>
+            <td>Replace characters in a string. 'hello'.gsub(/ [eo]/, 'e' => 3, 'o' => '*') #=> "h3ll*"</td>
+          </tr>
+          <tr>
+          <tr>
+            <td colspan="2" align="center">Hashes</td>
+          </tr>
+            <td>has_key?(k)</td>
+            <td>Returns boolean if key exists</td>
+          </tr>
+          <tr>
+            <td>has_value?(v)</td>
+            <td>Returns boolean if value exists</td>
+          </tr>
+          <tr>
+            <td>keys</td>
+            <td>Puts all keys in an array</td>
+          </tr>
+          <tr>
+            <td>values</td>
+            <td>Puts all values in an array</td>
+          </tr>
+          <tr>
+            <td>invert</td>
+            <td>Switches key/values. Repeats are deleted and last one stays.</td>
+          </tr>
+          <tr>
+            <td>merge()</td>
+            <td>Merge 2 hashes</td>
+          </tr>
+          <tr>
+            <td>select {|k,v| ...}</td>
+            <td>Returns all that match: h.select {|k,v| v < 200}</td>
+          </tr>
+        </table>
+        
+
+      </div>
+      <div class="lefthr"></div>
+    </div>
+    <div class="right">
+      <div class="rarticle">
+        <table class="tg">
+          <tr>
+            <th>SQL Syntax</th>
+          </tr>
+          <tr>
+            <td>SELECT is the clause you use every time you want to query information from a database.</td>
+          </tr>
+          <tr>
+            <td>WHERE is a popular command that lets you filter the results of the query based on conditions that you specify.</td>
+          </tr>
+          <tr>
+            <td>LIKE and BETWEEN are special operators that can be used in a WHERE clause</td>
+          </tr>
+          <tr>
+            <td>AND and OR are special operators that you can use with WHERE to filter the query on two or more conditions.</td>
+          </tr>
+          <tr>
+            <td>ORDER BY lets you sort the results of the query in either ascending or descending order.</td>
+          </tr>
+          <tr>
+            <td>LIMIT lets you specify the maximum number of rows that the query will return. This is especially important in large tables that have thousands or even millions of rows.</td>
+          </tr>
+          <tr>
+            <td>Primary Key is a column that serves a unique identifier for row in the table. Values in this column must be unique and cannot be NULL.</td>
+          </tr>
+          <tr>
+            <td>Foreign Key is a column that contains the primary key to another table in the database. It is used to identify a particular row in the referenced table.</td>
+          </tr>
+          <tr>
+            <td>AS is a keyword in SQL that allows you to rename a column or table in the result set using an alias.</td>
+          </tr>
+        </table>
+      </div>
+      <div class="righthr"></div>
+     <table class="tg">
+          <tr>
+            <th colspan="2">CSS Positioning</th>
+          </tr>
+          <tr>
+            <td>position</td>
+            <td>places elements on screen, e.g. absolute</td>
+          </tr>
+          <tr>
+            <td>float</td>
+            <td>stacks elements horizontally in a particular</td>
+          </tr>
+          <tr>
+            <td>top, left, right, bottom</td>
+            <td>specifies the offsets used in absolute, fixed,
+and relative positions, e.g. top:10px;left:10px</td>
+          </tr>
+          <tr>
+            <td>display</td>
+            <td>sets how the element is placed in the doc flow, e.g. block, inline, none</td>
+          </tr>
+          <tr>
+            <td>z-index</td>
+            <td>sets the stacking order of elements, e.g. z- index of 1 is below z-index of 2</td>
+          </tr>
+          <tr>
+            <td>overflow</td>
+            <td>sets what happens to content outside</td>
+          </tr>
+
+      <div class="righthr"></div>
+      <table class="tg">
+          <tr>
+            <th colspan="2">Ruby Syntax</th>
+          </tr>
+          <tr>
+            <td>class</td>
+            <td >class Person
+              <div>attr_accessor :name, :age def full_info</div>
+              <div>return "#{@name} is #{@age} years old"</div>
+              <div>  end </div>
+              <div>end</div>
+              <div>fred = Person.new fred.name = "Fred" fred.age = 45</div>
+              <div>puts fred.full_info</div></td>
+          </tr>
+          <tr>
+            <td>attr_reader :nam e</td>
+            <td>def name   @name    end</td>
+          </tr>
+          <tr>
+            <td>attr_writer :name</td>
+            <td>def name=(value)    @name = value    end</td>
+          </tr>
+          <tr>
+            <td>attr_accessor</td>
+            <td>def self.name     @@name    end</td>
+          </tr>
+          <tr>
+            <td>1..5</td>
+            <td>Includes 1,2,3,4,5</td>
+          </tr>
+          <tr>
+            <td>1...5</td>
+            <td>Includes 1,2,3,4</td>
+          </tr>
+    </div>
+  </div>
+  <div id="clear"></div>
+</body>
+</html>

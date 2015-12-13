@@ -1,65 +1,101 @@
 <!DOCTYPE html>
 <html>
-<link rel="stylesheet" type="text/css" href="stylesheets/default.css">
-<link rel="stylesheet" type="text/css" href="stylesheets/blog.css">
 <head>
-	<title></title>
+<title>Calvin Lang</title>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+<link rel="stylesheet" type="text/css" href="style.css"/>
 </head>
-<!-- Here we have three parts that make up the top 3 bars. 
-They're titled in classes "header_1" "header_2" "header_3"-->
-
-<nav id="header_overlay4">Search</nav>
 <body>
-<header>
-	<header id="header_1"></header>
-	<header id="header_2"></header>
-	<header id="header_3"></header>
-	<header id="header_overlay1">Calvin Lang</header>
-	<header id="header_overlay2">
-		A site about my adventure in software development
-	</header>
+<div id="container">
+  <div id="banner">
+    <div id="title">
+      <h1><a href="index.html">Calvin Lang</a></h1>
+      <h2>Software development, technology and medical lab science</h2>
+    </div>
+    <ul class="nav">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about_me.html">About Me</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="resume.html">Resume</a></li>
+      <li><a href="blog/index.html">Blog</a></li>
+    </ul>
+  </div>
+  <div id="mainContentTop"> </div>
+  <div id="mainContent">
+    <div class="left">
+      <div class="article">
+        <h1>It's time for Ruby, class</h1>
+        <p>Essentially everything in Ruby is an object. This means in many ways that something is like an object in real life in that there are aspects to it that are observable, collectible, and modifiable. Say I'm in a woodworking shop. Every piece of wood has a length, width and height. It has a mass. Methods are like your tools in a way. You can circular_saw(plywood, 3 feet, 2 inches, 6 inches). In this way, our circular saw is in itself an object. Lets say our circular_saw method gives us a piece of wood. That is also an object.</p>
+        <p>What's great about working with objects is that they can be moved around. They can be used here and there and put with this and that. However, at times our software is going to be too elaborate and huge for us to have so many different areas.</p>
+        <p>So in our workshop analogy, our measurements for working with metal, clay, paint, and wood all vary. We're gonna have all different variables types, we can call these "classes."</p>
+        <p>Classes are great because we can pass variables in and around methods within a class.</p>
+        <p>So lets say we are making a program that calculates how many screws we need for a certain length of wood and metal. Keep in mind, we may want to have a whole bunch of methods for length and metal individually. So let us put those in their own classes.</p>
+        <codeblock>
+  class Wood
+    def initialize(length)
+      @screws_per_foot = 12
+      @length = length
+    end
 
-	<nav id="header_overlay3">
-		Home Page<span class="wordspacing"></span>About Me<span class="wordspacing"></span>Projects<span class="wordspacing"></span>Resume<span class="wordspacing"></span>Blog
-	</nav>	
-</header>
-<article>
-	<article class="post">
-		<article class="post_title">A Bit About Me</article>
-		<article class="post_date">
-			<h1>6</h1>
-			<h4> class="date_month">Nov</h4>
-		</article>
-		<article class="post_content">		
-			<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    def num_of_screws
+      return @length * @screws_per_foot
+    end
+  end
 
-			<p>"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"</p>
+  class Metal
+     def initialize(length)
+      @screws_per_foot = 24
+      @length = length
+    end
 
-			<p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.</p>
-		<article class="post_link">Continue...</article>
-		</article>
-	</article>
-</article>
-<aside>
-	<div id="aside_1">			<table>
-		<tbody><tr>
-				<td>My name is Calvin Lang and I am an aspiring developer. I'm currently enrolled at DevBootCamp Chicago in the Chorus Frogs Cohort.</td>
-				<td><img src="http://calvinlang.github.io/blog/imgs/profile.png" width="130"></td>
-			</tr>
-			<tr>
-				<td colspan="2">
-				I created this blog as a place for me to show what I'm working on both in software development and my life. My interests are woodworking, medical science, productivity, nurtition, and weight training.
-				</td>
-			</tr>
-		</tbody></table>
-	</div>
-	<div id="aside_2"> Popular Blog Posts </div>
-	<div id="aside_3"> My Projects </div>
-	<div id="aside_4"> Blogs by month </div>
-</aside>
-<!-- <footer>
-	<p>Follow me on Facebook or LinkedIn. </p>
-	<p>Copyright © 2015 Calvin Lang</p>
-</footer> -->
+    def num_of_screws
+      return @length * @screws_per_foot
+    end
+  end
+
+  metal_screws = Metal.new(12)
+  wood_screws = Wood.new(9)
+  p metal_screws.num_of_screws + wood_screws.num_of_screws
+
+        </codeblock>
+<blockquote>Here we have two classes for two different sets of calculations to show variables being passed within a class.</blockquote>
+
+        <p>So we see that we can have different classes for our wood and metal planks to have their own sets of constants like the number of screws needed per foot. We can then calculate based on their own lengths how many screws we will need. As we expand this it will be more valuable to have classes for our individual values.</p>
+        
+        <div class="leftFooter">
+          <p>Posted November 30th 2015 by Calvin</p>
+        </div>
+      </div>
+      <div class="lefthr"></div>
+    </div>
+    <div class="right">
+      <div class="rarticle">
+        <h1></h1>
+        <h1><img src="imgs/profile.png"></h1>
+        
+        <p>My name is Calvin Lang and I am an aspiring developer. I'm currently enrolled at DevBootCamp Chicago in the Chorus Frogs Cohort. I love projects, any kind of project. I created this blog as a place for me to show what I'm working on both in software development and my life. My interests are woodworking, medical science, productivity, nutrition, and weight training.</p>
+      </div>
+      <div class="righthr"></div>
+      <h1>Recent Blog Posts</h1>
+      <ul>
+        <li><a href="blog/web_security.html">How web security works</a></li>
+        <li><a href="blog/class.html">It's time for Ruby, class</a></li>
+        <li><a href="blog/git.html">About GitHub</a></li>
+        <li><a href="blog/cultural_issues">Cultural issues in tech</a></li>
+        <li><a href="blog/arrays_hashes.html">Ruby hashes and arrays</a></li>
+        <li><a href="blog/enumerable-methods.html">Enumerable#cycle</a></li>
+      </ul>
+      <div class="righthr"></div>
+      <div class="rarticle">
+        <h1>Projects</h1>
+          <ul>
+            <li><a href="projects/cheatsheet.html">Calvin's DBC Cheat Sheet</a></li>
+          </ul>
+      </div>
+    </div>
+  </div>
+  <div id="clear"></div>
+</div>
+<div id="copyright">&copy; 2015 Calvin Lang. CSS template by <a href="http://free-css-templates.gorotron.com">gorotron</a></div>
 </body>
 </html>
