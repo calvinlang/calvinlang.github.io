@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Calvin Lang</title>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+<link rel="stylesheet" type="text/css" href="../style.css"/>
+</head>
+<body>
+<div id="container">
+  <div id="banner">
+    <div id="title">
+      <h1><a href="index.html">Calvin Lang</a></h1>
+      <h2>Software development, technology and medical lab science</h2>
+    </div>
+    <ul class="nav">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="../about_me.html">About Me</a></li>
+      <li><a href="../projects.html">Projects</a></li>
+      <li><a href="../resume.html">Resume</a></li>
+      <li><a href="../index.html">Blog</a></li>
+    </ul>
+  </div>
+  <div id="mainContentTop"> </div>
+  <div id="mainContent">
+    <div class="left">
+      <div class="article">
+      		<h1>Web Security: The SSL Handshake</h1>
+			     <p>We’ve all seen the Secure Sockets Layer (SSL) certificates that show up when we are logging into a web site. Most notable is you have seen “Verisign” on a web site you’ve visited. This let’s us know that it is a verified and secure site and the SSL protocols encrypt the data that transfers between your own client computer and the servers protecting your private information. So your credit cards, address and other personal information are encrypted between you and the server. One part of this is the initial interaction, also known as the “handshake.” Let’s talk about what happens during this process.</p>
+           <p>First of all, this is an interaction between the you the client and the server.</p>
+           <p>When you log in to a site your client computer sends a hello that includes a key exchange message, a cypher, and a hash.</p>
+            <ul>
+              <li>Key - method of cryptography your client chooses</li>
+              <li>Cypher - a cypher that lists its available authentication, encryption, message authentication code (MAC) and exchange algorithms used to negotiate the security settings</li>
+              <li>Hash - A unique message authentication code</li>
+            </ul>
+           <p>Then on the server side it will send the client it certification’s serial number, the issuer (like Versign) and its public key.</p>
+           <p>At this point the client computer starts encrypting. A master secret code is generated with a cypher spec. The server then also respond with a cypher spec. After this all messages are now encrypted based on the agreed specifications.</p>
+           <p>This way when you send your credit card expiration of "10/19" it may send off something as elaborate as s$38f"gHU**S that the server will receive and interpret as “10/19."</p>
+
+        <div class="leftFooter">
+          <p>Posted December 14th 2015 by Calvin</p>
+        </div>
+      </div>
+      <div class="lefthr"></div>
+    </div>
+    <div class="right">
+      <div class="rarticle">
+        <h1></h1>
+        <h1><img src="imgs/profile.png"></h1>
+        
+        <p>My name is Calvin Lang and I am an aspiring developer. I'm currently enrolled at DevBootCamp Chicago in the Chorus Frogs Cohort. I love projects, any kind of project. I created this blog as a place for me to show what I'm working on both in software development and my life. My interests are woodworking, medical science, productivity, nutrition, and weight training.</p>
+      </div>
+      <div class="righthr"></div>
+      <h1>Recent Blog Posts</h1>
+      <ul>
+        <li><a href="web_security.html">How web security works</a></li>
+        <li><a href="class.html">It's time for Ruby, class</a></li>
+        <li><a href="git.html">About GitHub</a></li>
+        <li><a href="cultural_issues">Cultural issues in tech</a></li>
+        <li><a href="arrays_hashes.html">Ruby hashes and arrays</a></li>
+        <li><a href="enumerable-methods.html">Enumerable#cycle</a></li>
+      </ul>
+      <div class="righthr"></div>
+      <div class="rarticle">
+        <h1>Projects</h1>
+          <ul>
+            <li><a href="projects/cheatsheet.html">Calvin's DBC Cheat Sheet</a></li>
+          </ul>
+      </div>
+    </div>
+  </div>
+  <div id="clear"></div>
+</div>
+<div id="copyright">&copy; 2015 Calvin Lang. CSS template by <a href="http://free-css-templates.gorotron.com">gorotron</a></div>
+</body>
+</html>
