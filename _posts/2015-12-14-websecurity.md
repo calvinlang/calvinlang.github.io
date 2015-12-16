@@ -3,6 +3,7 @@ published: true
 title: Web Security and the SSL HandShake
 layout: post
 author: Calvin
+categories: [Software Development]
 
 ---
 

@@ -3,6 +3,7 @@ published: true
 title: Ruby Arrays and Hashes
 layout: post
 author: Calvin
+categories: [Software Development, Ruby, JavaScript]
 
 ---
 Have you ever met someone who learned the piano and musical theory growing up? They just seem to have this magical sense of music. They hear so much more, and it's because they have so much background in the subject. If you hand someone like this a new instrument like a trumpet or a flute, and they can perhaps start playing a scale in about an hour. Whereas someone with no musical experience will take a few days to have be able to get to that point.

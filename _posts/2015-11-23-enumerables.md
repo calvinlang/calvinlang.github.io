@@ -3,6 +3,7 @@ published: true
 title: Enumberables
 layout: post
 author: Calvin
+categories: [Software Development, Ruby]
 
 ---
 What are enumberables? Enumerables are Ruby methods ingrained to "traverse, search, sort and manipulate collections." You may even say "iterate?" In the end, software development is creating methods to collect, modify and present information in the most efficient way possible. A large part of this is ordering between members of a collection. So of this construct we have to sometimes find max, mins, add, count, drop and so many more. So let's talk able the enumberable #cycle.

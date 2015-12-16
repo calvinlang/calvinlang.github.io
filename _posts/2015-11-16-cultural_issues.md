@@ -3,6 +3,7 @@ published: true
 title: Women in Tech
 layout: post
 author: Calvin
+categories: [Software Development]
 
 ---
 Today I read that Information week: "According to the National Center for Women and IT, the numbers aren't much better in the US. The organization uses a variety of sources to compile its data, including the U.S. Bureau of Labor Statistics and the National Center for Education Statistics. The organization reported that in 2012, only 26% of IT jobs were held by women. And while women earned 57% of the undergraduate degrees in the US in 2012, only 18% of computer and information science degrees were earned by women that year. Compare this to 1985, when 37% of CS degrees were earned by women."
