@@ -8,7 +8,7 @@ module.exports = {
     url,
     siteUrl: url,
     title: "Mental Belly Rubs",
-    subtitle: "A place for me to practice my drawing",
+    subtitle: "Code, food, read, medical lab, tying to learn to draw.",
     copyright: "© All rights reserved.",
     disqusShortname: "",
     menu: [
