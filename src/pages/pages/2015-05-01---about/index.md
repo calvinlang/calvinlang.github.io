@@ -4,10 +4,12 @@ layout: page
 path: "/about"
 ---
 
-Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante.
+Howdy I'm Calvin. Software developer focusing of front-end development. My background is in medical laboratory science where I have worked in the areas of immunology, hematology, microbiology and quality assurance.
 
-![Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi.](./1.jpg)
+Right now I'm focused on a product called Cualia. It is an application for medical labs to verify the performance of their medical instruments.
 
-*Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi.*
+Method Verification in medical laboratory science is a niche subject in a niche industry. But I think we've seen from certain incidents in medical testing during the COVID crisis that reliable testing is at utmost importance. Many laboratories don't do this because of the high barrier of entry from not having the right tools and resources available.
 
-Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus
+With my background in laboratory, I feel I should spearhead this project to bring a modern verification system to the medical setting.
+
+If you'd like to hear more about this feel free to reach out to me.
