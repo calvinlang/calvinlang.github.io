@@ -8,8 +8,9 @@ module.exports = {
     url,
     siteUrl: url,
     title: "Mental Belly Rubs",
-    subtitle: "Code, food, read, medical lab, tying to learn to draw.",
-    copyright: "© All rights reserved.",
+    subtitle:
+      "Cooks with hot fire. Codes with pure lighting. Writes like a sumo tango dancer. Eats ice cream with a little spoon. ",
+    copyright: "Calvin Lang © 2020",
     disqusShortname: "",
     menu: [
       {
