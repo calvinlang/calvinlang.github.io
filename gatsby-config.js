@@ -1,7 +1,7 @@
 const lost = require("lost")
 const pxtorem = require("postcss-pxtorem")
 
-const url = "https://calvinlang.github.io/"
+const url = "https://calvinlang.io/"
 
 module.exports = {
   siteMetadata: {
